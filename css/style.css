@@ -1,0 +1,174 @@
+/*Material Colour*/
+
+.dark-primary-color {
+    background: #00796B;
+}
+
+.default-primary-color {
+    background: #009688;
+}
+
+.light-primary-color {
+    background: #B2DFDB;
+}
+
+.text-primary-color {
+    color: #FFFFFF;
+}
+
+.accent-color {
+    background: #FF5722;
+}
+
+.primary-text-color {
+    color: #212121;
+}
+
+.secondary-text-color {
+    color: #757575;
+}
+
+.divider-color {
+    border-color: #BDBDBD;
+}
+
+html {
+    font-size: 16px;
+    font-family: helvetica;
+    color: #212121;
+}
+
+.slideUp  {
+	opacity:0;
+}
+
+.slideDown {
+	opacity: 1;
+}
+
+.container {
+    height: auto;
+}
+
+.no-border {
+    border: none !important;
+}
+
+.no-children {
+	margin:5px;
+	font-size: 0.8rem;
+	font-style: italic;
+	text-align: left;
+}
+
+.list {
+    font-size: 1.5rem;
+    list-style: none;
+    border-left: 2px dotted #FF5722;
+    /*animation enabled */
+    transition-property: all;
+    transition-duration:1s;
+    transition-timing-function: cubic-bezier(0,1,0.5,1);
+
+}
+
+.drive-icon {
+    margin: 5px;
+    padding: 5px;
+}
+
+.drive-icon>div[type=drive] {
+    font-weight: bold;
+    padding: 2px;
+    border: 1px solid grey;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+.drive-icon>div[type=drive]:hover,
+.subtree_item:hover {
+    cursor: pointer;
+    background: #FF5722;
+    color: white;
+}
+
+.subtree_item {
+    border: 1px solid grey;
+    border-radius: 2px;
+    padding: 5px;
+    margin-top: 5px;
+    width: 50px;
+    max-width: 150px;
+}
+
+.list .list-item {
+    font-size: 0.8rem;
+}
+
+.toggler {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: tomato;
+    cursor: pointer;
+    display: inline-block;
+    margin-left:10px;
+}
+
+.collapsed::after {
+    content: '+';
+}
+
+.expanded::after {
+    content: '−';
+}
+
+.loading_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 100px);
+    display: none;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #FF5722;
+    font-size: 2rem;
+    width: 200px;
+    height: 200px;
+}
+
+.file {
+    background: #80deea;
+    color: #212121;
+}
+
+.binary {
+    background: #ffcc80;
+    color: #212121;
+}
+
+.folder {
+    position: relative;
+    width: 32px;
+    height: 15px;
+    background: #B2DFDB;
+}
+
+.folder:before {
+    content: '';
+    width: 36%;
+    height: 6px;
+    border-radius: 0 5px 0 0;
+    position: absolute;
+    background: #00796B;
+    top: -8px;
+    left: -1px;
+    border: 1px solid black;
+}
